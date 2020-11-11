@@ -1,0 +1,11 @@
+<ol>
+    <li>
+        <span role="img" aria-label="Published at">📅</span>{{ updated_at }}
+    </li>
+    <li>
+        <span role="img" aria-label="Expiration date">⏱️</span>{{ expiry_date }}
+    </li>
+    <li>
+        <span role="img" aria-label="Job Role">💼</span>{{ partial:taxonomy.inline :tags="roles" }}
+    </li>
+</ol>

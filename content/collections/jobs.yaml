@@ -1,0 +1,13 @@
+title: Jobs
+template: jobs/show
+layout: layout
+mount: 7d80c348-b427-452a-96c2-93c4590135f4
+taxonomies:
+  - locations
+  - roles
+revisions: false
+route: '{mount}/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private

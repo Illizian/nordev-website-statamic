@@ -1,4 +1,6 @@
-data: {  }
+data:
+  focus: 68-49-1
+  alt: 'Building websites has become too easy!'
 size: 355196
 last_modified: 1604667753
 width: 1200

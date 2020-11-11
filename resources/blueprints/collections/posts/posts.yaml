@@ -15,13 +15,14 @@ sections:
         field:
           mode: grid
           container: assets
-          restrict: false
+          restrict: true
           allow_uploads: true
           max_files: 1
           display: 'Hero Image'
           type: assets
           icon: assets
           listable: hidden
+          folder: posts
       -
         import: bard
   sidebar:
@@ -35,3 +36,11 @@ sections:
           localizable: true
           validate:
             - required
+      -
+        handle: tags
+        field:
+          type: terms
+          taxonomies:
+            - tags
+          display: Tags
+          mode: select

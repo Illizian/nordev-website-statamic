@@ -1,0 +1,18 @@
+<h1>
+    {{ title }}
+    <span style="color: gray;">
+        (
+            {{ partial:taxonomy.inline :tags="locations" }} /
+            {{ salary }} /
+            {{ seniority }}
+        )
+    </span>
+</h1>
+
+{{ partial:jobs.detail }}
+
+<a href="{{ application_link }}">
+    Apply Now
+</a>
+
+{{ partial:bard.index }}

@@ -1,0 +1,13 @@
+<div>
+    <div>
+        {{ glide:cover height="175" width="124" crop="focal_crop" }}
+            <img src="{{ url }}" height="{{ height }}" width="{{ width}}" alt="The front cover of {{ title }}">
+        {{ /glide:cover }}
+    </div>
+    <div>
+        <h3>{{ title }}</h3>
+        <p>{{ description | nl2br }}</p>
+
+        <a href="{{ document }}" download="">Download PDF</a>
+    </div>
+</div>

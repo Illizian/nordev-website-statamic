@@ -1,0 +1,103 @@
+title: Jobs
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          width: 66
+          validate:
+            - required
+      -
+        handle: expiry_date
+        field:
+          mode: single
+          time_enabled: false
+          time_required: false
+          earliest_date: '2020-01-01'
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+          display: 'Expiry Date'
+          type: date
+          icon: date
+          width: 33
+          listable: true
+          validate:
+            - required
+      -
+        handle: salary
+        field:
+          input_type: text
+          display: Salary
+          type: text
+          icon: text
+          width: 33
+          listable: true
+          validate:
+            - required
+      -
+        handle: seniority
+        field:
+          options:
+            junior: Junior
+            mid: Mid
+            senior: Senior
+          multiple: false
+          clearable: false
+          searchable: false
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          display: Seniority
+          type: select
+          icon: select
+          width: 33
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: application_link
+        field:
+          input_type: url
+          display: 'Application Link'
+          type: text
+          icon: text
+          width: 33
+          listable: hidden
+          validate:
+            - required
+      -
+        import: bard
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+      -
+        handle: locations
+        field:
+          type: terms
+          taxonomies:
+            - locations
+          display: Locations
+          mode: select
+      -
+        handle: roles
+        field:
+          type: terms
+          taxonomies:
+            - roles
+          display: Roles
+          mode: select
+          listable: hidden

@@ -2,6 +2,8 @@ title: Posts
 template: posts/show
 layout: layout
 mount: 0fceca91-b7ee-412c-badd-2386b40edf29
+taxonomies:
+  - tags
 revisions: false
 route: '{mount}/{slug}'
 sort_dir: asc
