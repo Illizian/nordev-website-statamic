@@ -1,0 +1,13 @@
+{{ title }}
+
+{{ partial:bard.index }}
+
+{{ if mount }}
+    <ol>
+        {{ collection :from="mount" }}
+            <li>
+                {{ partial src="{mount}/preview" }}
+            </li>
+        {{ /collection }}
+    </ol>
+{{ /if }}

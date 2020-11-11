@@ -1,0 +1,80 @@
+title: Bard
+fields:
+  -
+    handle: bard
+    field:
+      always_show_set_button: false
+      buttons:
+        - h2
+        - h3
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - quote
+        - anchor
+        - image
+        - table
+      save_html: false
+      toolbar_mode: fixed
+      link_noopener: false
+      link_noreferrer: false
+      target_blank: false
+      reading_time: true
+      fullscreen: true
+      allow_source: true
+      display: Bard
+      type: bard
+      icon: bard
+      listable: hidden
+      sets:
+        full_width_marketing_section:
+          display: 'Full Width Marketing Section'
+          fields:
+            -
+              handle: headline
+              field:
+                input_type: text
+                display: Headline
+                type: text
+                icon: text
+                listable: true
+                validate:
+                  - required
+            -
+              handle: substrap
+              field:
+                display: Substrap
+                type: textarea
+                icon: textarea
+                listable: hidden
+            -
+              handle: images
+              field:
+                mode: grid
+                container: assets
+                restrict: false
+                allow_uploads: true
+                display: Images
+                type: assets
+                icon: assets
+                listable: hidden
+                validate:
+                  - required
+        gallery:
+          display: Gallery
+          fields:
+            -
+              handle: pictures
+              field:
+                mode: grid
+                container: assets
+                restrict: false
+                allow_uploads: true
+                display: Pictures
+                type: assets
+                icon: assets
+                listable: hidden
+                validate:
+                  - required
