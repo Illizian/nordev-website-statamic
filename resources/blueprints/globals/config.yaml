@@ -1,0 +1,24 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: site_name
+        field:
+          input_type: text
+          display: 'Site Name'
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: substrap
+        field:
+          input_type: text
+          display: Substrap
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required

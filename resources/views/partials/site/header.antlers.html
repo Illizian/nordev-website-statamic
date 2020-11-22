@@ -1,0 +1,18 @@
+<header>
+    <nav class="flex flex-col mt-6 align-middle md:flex-row md:mb-3">
+        <a class="mr-6" href="/">
+            {{ partial:logo }}
+        </a>
+        <ol class="align-middle md:flex md:text-xl">
+            {{ nav:main }}
+                <li
+                    class="font-extrabold md:mr-6 border-l-4 md:border-l-0 md:border-b-4 border-transparent {{ if is_current || is_parent }}border-red-500{{/if}} hover:text-red-500"
+                >
+                    <a href="{{ url }}">
+                        {{ title }}
+                    </a>
+                </li>
+            {{ /nav:main }}
+        </ol>
+    </nav>
+</header>

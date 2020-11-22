@@ -37,6 +37,18 @@ sections:
           validate:
             - required
       -
+        handle: authors
+        field:
+          mode: typeahead
+          collections:
+            - authors
+          display: Authors
+          type: entries
+          icon: entries
+          listable: hidden
+          validate:
+            - required
+      -
         handle: tags
         field:
           type: terms

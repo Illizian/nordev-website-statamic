@@ -1,5 +1,5 @@
 ---
-title: Magazine
+title: magazine
 mount: magazines
 bard:
   -

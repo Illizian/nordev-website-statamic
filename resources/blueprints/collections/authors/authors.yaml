@@ -1,0 +1,45 @@
+title: Authors
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: avatar
+        field:
+          mode: grid
+          container: assets
+          folder: authors
+          restrict: true
+          allow_uploads: true
+          max_files: 1
+          display: Avatar
+          type: assets
+          icon: assets
+          width: 33
+          listable: true
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          width: 66
+          validate:
+            - required
+      -
+        handle: biography
+        field:
+          display: Biography
+          type: textarea
+          icon: textarea
+          listable: hidden
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required

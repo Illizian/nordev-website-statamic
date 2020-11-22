@@ -69,9 +69,11 @@ bard:
         type: text
         text: 'Amet justo donec enim diam vulputate ut. Tempor nec feugiat nisl pretium fusce id velit. Quam lacus suspendisse faucibus interdum. Viverra mauris in aliquam sem fringilla ut. At quis risus sed vulputate odio ut enim blandit. Mattis aliquam faucibus purus in massa. Iaculis eu non diam phasellus vestibulum lorem sed risus ultricies. Mi eget mauris pharetra et. Ipsum faucibus vitae aliquet nec ullamcorper sit amet. Fringilla est ullamcorper eget nulla facilisi etiam dignissim. Purus sit amet volutpat consequat mauris.'
 updated_by: 9c61e4ae-acd7-424b-b44c-ddf470aee228
-updated_at: 1605098446
+updated_at: 1605702341
 tags:
   - example
   - article
+authors:
+  - 69b373e7-2466-42d4-b91b-1ef4127635e7
 id: e5111c4e-8fbe-488b-b28a-e820ff2450f1
 ---

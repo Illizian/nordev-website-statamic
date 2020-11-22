@@ -50,6 +50,7 @@ sections:
           listable: hidden
           validate:
             - required
+          instructions: 'Please only upload PDFs :P'
   sidebar:
     display: Sidebar
     fields:

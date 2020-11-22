@@ -8,21 +8,11 @@
         <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
         <script src="{{ mix src='/js/site.js' }}"></script>
     </head>
-    <body>
-        <header>
-            <nav>
-                <ol>
-                    {{ nav:main }}
-                        <li>
-                            <a href="{{ url }}">
-                                {{ title }}
-                            </a>
-                        </li>
-                    {{ /nav:main }}
-                </ol>
-            </nav>
-        </header>
+    <body class="bg-gray-900 text-gray-200 px-8">
+        <div class="flex flex-col h-screen mx-auto w-full md:w-4/5 lg:max-w-3xl">
+            {{ partial:site/header }}
 
-        {{ template_content }}
+            {{ template_content }}
+        </div>
     </body>
 </html>
