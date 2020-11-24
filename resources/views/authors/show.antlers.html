@@ -1,0 +1,12 @@
+<header class="mb-4">
+    {{ partial:title title="authors/{ title | slugify }" prepend_slash="true" }}
+
+
+    {{ if biography }}
+        <p class="mt-2 text-lg text-gray-500">{{ biography | nl2br }}</p>
+    {{ /if }}
+</header>
+
+{{ collection:posts :author:contains="id" :limit="config.entries_per_page" paginate="true" as="posts" }}
+    {{ partial:listing source="posts" }}
+{{ /collection:posts }}

@@ -1,6 +1,7 @@
 title: Authors
 template: authors/show
 revisions: false
+route: 'authors/{slug}'
 date_behavior:
   past: public
   future: private
