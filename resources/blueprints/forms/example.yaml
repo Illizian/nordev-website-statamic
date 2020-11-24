@@ -1,0 +1,177 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: assets
+        field:
+          mode: grid
+          container: assets
+          restrict: false
+          allow_uploads: true
+          display: Assets
+          type: assets
+          listable: hidden
+      -
+        handle: integer
+        field:
+          input_type: number
+          display: Integer
+          type: text
+          listable: hidden
+          required: true
+      -
+        handle: checkboxes
+        field:
+          inline: false
+          options:
+            test-1: 'Test #1'
+            test-2: 'Test #2'
+            test-3: 'Test #3'
+            test-4: 'Test #4'
+            test-5: 'Test #5'
+          display: Checkboxes
+          type: checkboxes
+          listable: hidden
+      -
+        handle: checkboxes_inline
+        field:
+          inline: true
+          options:
+            test-1: 'Test #1'
+            test-2: 'Test #2'
+            test-3: 'Test #3'
+            test-4: 'Test #4'
+            test-5: 'Test #5'
+          display: Checkboxes
+          type: checkboxes
+          listable: hidden
+      -
+        handle: radio
+        field:
+          options:
+            test-1: 'Test #1'
+            test-2: 'Test #2'
+            test-3: 'Test #3'
+            test-4: 'Test #4'
+            test-5: 'Test #5'
+          inline: false
+          display: Radio
+          type: radio
+          listable: hidden
+      -
+        handle: radio_inline
+        field:
+          options:
+            test-1: 'Test #1'
+            test-2: 'Test #2'
+            test-3: 'Test #3'
+            test-4: 'Test #4'
+            test-5: 'Test #5'
+          inline: true
+          display: Radio
+          type: radio
+          listable: hidden
+      -
+        handle: select
+        field:
+          options:
+            test-1: 'Test #1'
+            test-2: 'Test #2'
+            test-3: 'Test #3'
+            test-4: 'Test #4'
+            test-5: 'Test #5'
+          multiple: false
+          clearable: false
+          searchable: false
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          display: Select
+          type: select
+          listable: hidden
+      -
+        handle: text
+        field:
+          input_type: text
+          display: Text
+          type: text
+          listable: hidden
+      -
+        handle: textarea
+        field:
+          display: Textarea
+          type: textarea
+          listable: hidden
+      -
+        handle: skinny
+        field:
+          input_type: text
+          display: Skinny
+          type: text
+          width: 25
+          listable: hidden
+      -
+        handle: skinny_1
+        field:
+          input_type: text
+          display: Skinny
+          type: text
+          width: 25
+          listable: hidden
+      -
+        handle: skinny_2
+        field:
+          input_type: text
+          display: Skinny
+          type: text
+          width: 25
+          listable: hidden
+      -
+        handle: skinny_3
+        field:
+          input_type: text
+          display: Skinny
+          type: text
+          width: 25
+          listable: hidden
+      -
+        handle: mid
+        field:
+          input_type: text
+          display: Skinny
+          type: text
+          width: 33
+          listable: hidden
+      -
+        handle: mid_1
+        field:
+          input_type: text
+          display: Skinny
+          type: text
+          width: 33
+          listable: hidden
+      -
+        handle: mid_2
+        field:
+          input_type: text
+          display: Skinny
+          type: text
+          width: 33
+          listable: hidden
+      -
+        handle: half
+        field:
+          input_type: text
+          display: Skinny
+          type: text
+          width: 50
+          listable: hidden
+      -
+        handle: half_1
+        field:
+          input_type: text
+          display: Skinny
+          type: text
+          width: 50
+          listable: hidden

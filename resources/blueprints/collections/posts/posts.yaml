@@ -15,16 +15,23 @@ sections:
         field:
           mode: grid
           container: assets
-          restrict: true
+          restrict: false
           allow_uploads: true
           max_files: 1
-          display: 'Hero Image'
+          display: Hero
           type: assets
-          icon: assets
           listable: hidden
-          folder: posts
       -
         import: bard
+      -
+        handle: author
+        field:
+          mode: default
+          collections:
+            - authors
+          display: Author
+          type: entries
+          listable: hidden
   sidebar:
     display: Sidebar
     fields:
@@ -37,18 +44,6 @@ sections:
           validate:
             - required
       -
-        handle: authors
-        field:
-          mode: typeahead
-          collections:
-            - authors
-          display: Authors
-          type: entries
-          icon: entries
-          listable: hidden
-          validate:
-            - required
-      -
         handle: tags
         field:
           type: terms
@@ -56,3 +51,10 @@ sections:
             - tags
           display: Tags
           mode: select
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+          validate:
+            - required

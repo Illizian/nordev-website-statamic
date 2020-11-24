@@ -2,3 +2,4 @@ title: Config
 data:
   site_name: 'Norfolk Developers'
   substrap: 'Going straight to the ♥️ of software development practice and process'
+  entries_per_page: 10

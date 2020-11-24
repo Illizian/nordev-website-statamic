@@ -1,0 +1,21 @@
+<div role="alert">
+    {{ if headline }}
+        <div class="px-4 py-2 bg-{{ color ?? 'red' }}-500 text-white text-sm font-bold rounded-t">
+            {{ headline }}
+        </div>
+    {{ /if }}
+
+    <div class="border border-t-0 border-{{ color ?? 'red' }}-400 px-4 py-3 rounded-b bg-{{ color ?? 'red' }}-100 text-{{ color ?? 'red' }}-700 text-xs">
+        {{ if message }}
+            <p>{{ message | nl2br }}</p>
+        {{ /if }}
+
+        {{ if errors }}
+            <p>
+                {{ errors }}
+                    {{ value }}<br>
+                {{ /errors }}
+            </p>
+        {{ /if }}
+    </div>
+</div>

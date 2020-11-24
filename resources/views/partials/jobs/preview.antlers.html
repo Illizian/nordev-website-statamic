@@ -1,5 +1,19 @@
-<a href="{{ url }}">
-    {{ title }}
-</a>
+<div class="mb-6 py-4">
+    <div class="md:w-10/12">
+        <h2 class="text-2xl text-gray-300 font-bold tracking-tight hover:text-red-500">
+            <a href="{{ entry:url }}">
+                {{ entry:title }}
 
-{{ partial:jobs.detail }}
+                <span class="text-gray-500">
+                    ({{ partial:taxonomy.inline :tags="entry:locations" }} / {{ entry:salary }} / {{ entry:seniority }})
+                </span>
+            </a>
+        </h2>
+
+        {{ partial:jobs.details }}
+
+        <p class="text-gray-500 text-lg mt-2">
+            {{ entry:bard | fragment }}
+        </p>
+    </div>
+</div>

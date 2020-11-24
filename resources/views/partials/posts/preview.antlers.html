@@ -1,25 +1,24 @@
-<div class="flex">
-    <div class="">
-        {{ partial:taxonomy.listing }}
+<div class="flex flex-col md:flex-row mb-6 py-4 hover:border rounded">
+    <div class="mr-6 w-full mb-1 md:mt-2 md:mb-0 md:w-2/12">
+        {{ partial:taxonomy.list :tags="entry:tags" }}
     </div>
+    <div class="flex flex-col md:w-10/12">
+        <span class="text-gray-500 text-sm">
+            {{ entry:updated_at }}
+        </span>
 
-    <div class="">
-        <p class="text-gray-500 text-sm">
-            {{ updated_at }}
-        </p>
-
-        <h2 class="text-2xl text-gray-300 font-bold">
-            <a href="{{ url }}">
-                {{ title }}
+        <h2 class="text-2xl text-gray-300 font-bold tracking-tight hover:text-red-500">
+            <a href="{{ entry:url }}">
+                {{ entry:title }}
             </a>
         </h2>
 
-        <p class="text-gray-500">
-            {{ content | fragment }}
+        <p class="text-gray-500 text-lg mt-2">
+            {{ if entry:bard }}
+                {{ entry:bard | fragment }}
+            {{ else }}
+                {{ entry:content | fragment }}
+            {{ /if }}
         </p>
     </div>
 </div>
-
-<a href="{{ url }}">
-    {{ title }}
-</a>

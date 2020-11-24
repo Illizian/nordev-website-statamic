@@ -1,0 +1,58 @@
+{{ paginate }}
+    <nav class="flex items-center justify-between border-t-2 border-gray-700">
+        <div class="py-4">
+            <p class="text-sm leading-5">
+                Showing
+                <span class="font-bold">{{ current_page | -:1 | *:per_page | +:1 }}</span>
+                to
+                <span class="font-bold">{{ current_page | *:per_page | max:total_items }}</span>
+                of
+                <span class="font-bold">{{ total_items }}</span>
+                results
+            </p>
+        </div>
+        <div>
+            <ol class="flex">
+                <li key="pagination_previous" class="flex border-t-2 border-transparent">
+                    {{ if prev_page }}
+                        <a href="{{ prev_page }}" class="py-4 px-2" aria-label="Previous">
+                            &laquo;
+                        </a>
+                    {{ elseif total_pages > 1 }}
+                        <span class="py-4 px-2 text-gray-300">
+                            &laquo;
+                        </span>
+                    {{ /if }}
+                </li>
+
+                {{ links:all }}
+                    {{ if page == current_page }}
+                        <li class="flex border-t-2 border-red-300">
+                            <span class="py-4 px-2">
+                                {{ page }}
+                            </span>
+                        </li>
+                    {{ else }}
+                        <li class="flex border-t-2 border-transparent">
+                            <a href="{{ url }}" class="py-4 px-2">
+                                {{ page }}
+                            </a>
+                        </li>
+                    {{ /if }}
+                {{ /links:all }}
+
+                <li key="pagination_next" class="flex border-t-2 border-transparent">
+                    {{ if next_page }}
+                        <a href="{{ next_page }}" class="py-4 px-2" aria-label="Next">
+                            &raquo;
+                        </a>
+                    {{ elseif total_pages > 1 }}
+                        <span class="py-4 px-2 text-gray-300">
+                            &raquo;
+                        </span>
+                    {{ /if }}
+                </li>
+            </ol>
+        </div>
+    </nav>
+{{ /paginate }}

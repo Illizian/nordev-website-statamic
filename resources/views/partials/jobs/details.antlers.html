@@ -1,0 +1,18 @@
+<ol class="mt-2 text-gray-500 text-sm md:flex md:m-0">
+    <li class="mb-2 md:mb-0 md:mr-2">
+        <label class="mr-2" role="img" aria-label="Published at">📅</label>
+        {{ entry:date | relative }}
+    </li>
+
+    <li class="mb-2 md:mb-0 md:mr-2">
+        <label class="mr-2" role="img" aria-label="Expiration date">⏱️</label>
+        {{ entry:expiry_date }}
+    </li>
+
+    <li class="mb-2 md:mb-0 md:mr-2">
+        <span class="mr-2" role="img" aria-label="Job Role">💼</span>
+        <a class="underline" href="{{ entry:roles | get:url }}">
+            {{ entry:roles | get:title }}
+        </a>
+    </li>
+</ol>

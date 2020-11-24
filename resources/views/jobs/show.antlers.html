@@ -1,18 +1,15 @@
-<h1>
-    {{ title }}
-    <span style="color: gray;">
-        (
-            {{ partial:taxonomy.inline :tags="locations" }} /
-            {{ salary }} /
-            {{ seniority }}
-        )
-    </span>
-</h1>
+<header class="mb-12">
+    <h1 class="mb-1 text-4xl font-bold leading-tight md:text-5xl">
+        {{ title }}
 
-{{ partial:jobs.detail }}
+        <span class="text-gray-500">
+            ({{ partial:taxonomy.inline :tags="locations" }} / {{ salary }} / {{ seniority }})
+        </span>
+    </h1>
 
-<a href="{{ application_link }}">
-    Apply Now
-</a>
+    <div class="mb-4">
+        {{ partial:jobs.details :entry="page" }}
+    </div>
+</header>
 
 {{ partial:bard.index }}

@@ -3,7 +3,7 @@ fields:
   -
     handle: bard
     field:
-      always_show_set_button: false
+      always_show_set_button: true
       buttons:
         - h2
         - h3
@@ -16,6 +16,7 @@ fields:
         - anchor
         - image
         - table
+      container: assets
       save_html: false
       toolbar_mode: fixed
       link_noopener: false
@@ -26,11 +27,31 @@ fields:
       allow_source: true
       display: Bard
       type: bard
-      icon: bard
       listable: hidden
       sets:
-        full_width_marketing_section:
-          display: 'Full Width Marketing Section'
+        quote:
+          display: Quote
+          fields:
+            -
+              handle: content
+              field:
+                display: Content
+                type: textarea
+                instructions: 'The main content of the quotation'
+                listable: true
+                validate:
+                  - required
+            -
+              handle: attribution
+              field:
+                placeholder: 'John Smith'
+                input_type: text
+                display: Attribution
+                type: text
+                instructions: 'Who is the quote attributed to?'
+                listable: true
+        collection:
+          display: Collection
           fields:
             -
               handle: headline
@@ -38,43 +59,77 @@ fields:
                 input_type: text
                 display: Headline
                 type: text
-                icon: text
-                listable: true
-                validate:
-                  - required
-            -
-              handle: substrap
-              field:
-                display: Substrap
-                type: textarea
-                icon: textarea
+                instructions: 'You can leave it blank to default to the Collection''s title'
                 listable: hidden
             -
-              handle: images
+              handle: from
               field:
-                mode: grid
-                container: assets
-                restrict: false
-                allow_uploads: true
-                display: Images
-                type: assets
-                icon: assets
+                max_items: 1
+                mode: select
+                display: Collections
+                type: collections
                 listable: hidden
                 validate:
                   - required
+            -
+              handle: items_to_show
+              field:
+                display: 'Items to show'
+                type: integer
+                listable: hidden
+                default: 3
+                validate:
+                  - required
+            -
+              handle: link
+              field:
+                display: Link
+                type: link
+                listable: hidden
         gallery:
           display: Gallery
           fields:
             -
-              handle: pictures
+              handle: assets
               field:
                 mode: grid
-                container: assets
                 restrict: false
                 allow_uploads: true
-                display: Pictures
+                display: Assets
                 type: assets
-                icon: assets
+                listable: hidden
+        html:
+          display: HTML
+          fields:
+            -
+              handle: source
+              field:
+                display: Source
+                type: textarea
+                listable: hidden
+        form:
+          display: Form
+          fields:
+            -
+              handle: headline
+              field:
+                input_type: text
+                display: Headline
+                type: text
+                listable: hidden
+            -
+              handle: instructions
+              field:
+                display: Instructions
+                type: textarea
+                instructions: 'An optional instruction to be displayed above the form.'
+                listable: hidden
+            -
+              handle: source
+              field:
+                max_items: 1
+                display: Form
+                type: form
                 listable: hidden
                 validate:
                   - required

@@ -1,18 +1,22 @@
-<header>
-    <nav class="flex flex-col mt-6 align-middle md:flex-row md:mb-3">
-        <a class="mr-6" href="/">
+<header class="mt-6 md:mb-3 flex flex-wrap fade-out">
+    <div class="font-extrabold tracking-tight text-2xl mr-4 md:text-3xl">
+        <a class="border-b-4" href="/" alt="Return to the Norfolk Developers homepage">
             {{ partial:logo }}
         </a>
-        <ol class="align-middle md:flex md:text-xl">
-            {{ nav:main }}
-                <li
-                    class="font-extrabold md:mr-6 border-l-4 md:border-l-0 md:border-b-4 border-transparent {{ if is_current || is_parent }}border-red-500{{/if}} hover:text-red-500"
-                >
-                    <a href="{{ url }}">
-                        {{ title }}
-                    </a>
-                </li>
-            {{ /nav:main }}
-        </ol>
+    </div>
+
+    <nav class="w-full mt-3 mb-8 text-sm font-normal align-middle justify-center self-center md:text-xl md:mb-12 lg:w-auto lg:mt-0 lg:pl-3">
+        {{ nav:main }}
+            <a
+                class="
+                    block -ml-2 mb-1 md:m-0 pl-1 p-0 border-l-4 border-transparent font-semibold text-gray-300 hover:text-red-500
+                    md:inline md:pl-0 md:py-2 md:mr-6 md:border-l-0 md:border-b-4
+                    {{ if is_current || is_parent }}border-red-500{{ /if }}
+                "
+                href="{{ url }}"
+            >
+                {{ title }}
+            </a>
+        {{ /nav:main }}
     </nav>
 </header>

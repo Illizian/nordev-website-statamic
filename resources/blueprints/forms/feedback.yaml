@@ -1,0 +1,19 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: comment
+        field:
+          display: Comment
+          type: textarea
+          listable: true
+          required: true
+      -
+        handle: email
+        field:
+          input_type: email
+          display: Email
+          type: text
+          instructions: 'If you''d like a response to your comments, please pop your email address below and a member of the Committee will be in touch.'
+          listable: hidden

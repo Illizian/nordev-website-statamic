@@ -1,0 +1,14 @@
+<header class="flex flex-row items-center">
+    <h2 class="text-base uppercase border-b-4 border-gray-800 tracking-widest my-8 text-gray-500">
+        {{ headline  }}
+    </h2>
+
+    {{ if link }}
+        <a
+            href="{{ link }}"
+            class="ml-auto text-gray-300"
+        >
+            All {{ from }} &raquo;
+        </a>
+    {{ /if }}
+</header>

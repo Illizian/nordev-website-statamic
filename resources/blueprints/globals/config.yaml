@@ -8,7 +8,6 @@ sections:
           input_type: text
           display: 'Site Name'
           type: text
-          icon: text
           listable: hidden
           validate:
             - required
@@ -18,7 +17,16 @@ sections:
           input_type: text
           display: Substrap
           type: text
-          icon: text
+          listable: hidden
+  variables:
+    display: Variables
+    fields:
+      -
+        handle: entries_per_page
+        field:
+          display: 'Entries Per Page'
+          type: integer
+          instructions: 'The default pagination limit for mounted collections'
           listable: hidden
           validate:
             - required

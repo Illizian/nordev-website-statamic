@@ -8,25 +8,24 @@ sections:
         field:
           type: text
           required: true
-          width: 66
           validate:
             - required
       -
-        handle: expiry_date
+        handle: with
         field:
-          mode: single
-          time_enabled: false
-          time_required: false
-          earliest_date: '2020-01-01'
-          full_width: false
-          inline: false
-          columns: 1
-          rows: 1
-          display: 'Expiry Date'
-          type: date
-          icon: date
-          width: 33
-          listable: true
+          input_type: text
+          display: With
+          type: text
+          instructions: 'Which company is this role with?'
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: application_link
+        field:
+          display: 'Application Link'
+          type: link
+          listable: hidden
           validate:
             - required
       -
@@ -35,40 +34,16 @@ sections:
           input_type: text
           display: Salary
           type: text
-          icon: text
-          width: 33
           listable: true
           validate:
             - required
       -
         handle: seniority
         field:
-          options:
-            junior: Junior
-            mid: Mid
-            senior: Senior
-          multiple: false
-          clearable: false
-          searchable: false
-          taggable: false
-          push_tags: false
-          cast_booleans: false
+          input_type: text
           display: Seniority
-          type: select
-          icon: select
-          width: 33
-          listable: hidden
-          validate:
-            - required
-      -
-        handle: application_link
-        field:
-          input_type: url
-          display: 'Application Link'
           type: text
-          icon: text
-          width: 33
-          listable: hidden
+          listable: true
           validate:
             - required
       -
@@ -92,6 +67,8 @@ sections:
             - locations
           display: Locations
           mode: select
+          validate:
+            - required
       -
         handle: roles
         field:
@@ -100,4 +77,23 @@ sections:
             - roles
           display: Roles
           mode: select
-          listable: hidden
+          listable: true
+          max_items: 1
+          validate:
+            - required
+      -
+        handle: expiry_date
+        field:
+          type: date
+          listable: true
+          display: 'Expiry Date'
+          validate:
+            - required
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+          listable: true
+          validate:
+            - required
