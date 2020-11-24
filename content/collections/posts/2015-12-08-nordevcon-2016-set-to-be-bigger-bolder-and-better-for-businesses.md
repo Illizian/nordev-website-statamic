@@ -1,0 +1,31 @@
+---
+title: 'nor(DEV):con 2016 set to be bigger, bolder and better for businesses'
+updated_at: 1449579445
+author:
+  - b030d05c-5254-4c31-a790-d72064786ec7
+tags:
+  - NorDevCon
+id: 6ee89fa8-9153-4c8c-9dec-f6292c5d8fae
+---
+Following the success of last year’s [Norfolk Developers Conference](http://www.nordevcon.com/nordevcon2015/)(nor(DEV):con), which attracted an unprecedented 263 speakers, delegates and sponsors, [nor(DEV):con 2016](http://www.nordevcon.com/) promises to continue the record breaking trend. Run by Norwich-based web, mobile and enterprise software services provider [Naked Element](http://nakedelement.co.uk/), the Winter conference is in it’s fourth year and will bring together delegates and companies from across the whole professional spectrum.
+
+The conference is a meeting of minds for business and technology experts, who’ll come together to explore the fundamental role technology plays in the East of England’s economy. nor(DEV):con will take place from Thursday 25th to Saturday 27th of February 2016 at the [King’s Centre](http://www.kings-centre.com/) on King Street in Norwich.
+
+Back by popular demand, the conference will feature the dedicated business presentation stream to highlight how essential technology is for the wider business economy. The [2016 agenda](http://www.nordevcon.com/agenda/) is peppered with business-centric sessions (indicated by blue briefcase icons).
+
+[Paul Grenyer](https://www.facebook.com/Paul-Grenyer-757171474389895/?fref=ts), nor(DEV):con organiser, said:
+
+> “Once again we’re proud to lead the way with nor(DEV):con, now in it’s fourth year. It’s all about helping the tech community to reach out to the wider business community to demonstrate how we can all work together for stronger, more efficient businesses. Norfolk continues to be tipped as one to watch in the UK’s technology sector and is already considered a centre of technical excellence. Today technology is so ingrained and intertwined with the local economy that one cannot exist without the other and nor(DEV):con is a celebration of this.”
+
+The content-rich conference will feature keynote speeches, workshops and talks from industry influencers, including:
+
+- [Jon Bradford](http://www.nordevcon.com/sessions/#jonbradford), Managing Director of [Techstars in London](http://www.techstars.com/programs/london-program/), co-founder of F6S and[tech.eu](http://tech.eu/), will present ‘Silicon Broad: Bridges not Valleys. Jon will talk about how tech ecosystems evolve, tie that into tech and tech startups in London and the rest of the UK, and then talk about how this relates to the Valley. Jon will wrap up the session with advice for soon-to-be tech startups.
+
+
+- [Matthew Draycott](http://www.nordevcon.com/sessions/#matthewdraycott) will be presenting ‘The Myth Buster…The Real Secrets to Building a Growth Business’. Matthew will discuss his philosophies for building effective high growth companies. Based on his own experience he will focus on five key tasks which he believes every owner and management team should be engaged in if they hope to build a successful, rapidly growing business.
+
+Norwich-based [Axon Vibe](http://www.axonvibe.com/) will be nor(DEV):con’s Elite sponsors. John Fagan, CTO at Axon Vibe said “We are excited to support another great local technology event and welcome any opportunity that builds on Norwich’s reputation as a Tech City. We hope we will further cement Norwich's position on the national and international stage by choosing Norwich as the platform for launching our mobile app SoJo - A live view of your world globally in 2016.”
+
+The conference features a programme packed with interactive sessions demonstrating the latest and greatest advances in technology and will give businesses a real insight into how they can use technology to add value to their own business. The popular [dinner and evening wine reception](http://www.nordevcon.com/dinner-and-wine-reception-2016/) gives delegates the chance to network as well as a thought provoking Q&A sessions with the speakers.
+
+For more information, sponsorship opportunities or to book tickets, visit [www.nordevcon.com](http://www.nordevcon.com/)

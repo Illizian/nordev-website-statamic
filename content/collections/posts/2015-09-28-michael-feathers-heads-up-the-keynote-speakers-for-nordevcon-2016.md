@@ -1,0 +1,48 @@
+---
+title: 'Michael Feather''s Heads up the Keynote Speakers for Nor(DEV):con 2016'
+updated_at: 1443451996
+author:
+  - b030d05c-5254-4c31-a790-d72064786ec7
+tags:
+  - NorDevCon
+  - Keynote
+id: 2449c8ff-0669-4421-897f-57e91445781b
+---
+We’re delighted to be able to announce our keynote speakers for Nor(Dev):con 2016, which is taking place at the Kings Centre, King Street Norwich, 25-27th February 2016.
+
+**Michael Feathers**
+
+Friday (26th) Opening Keynote
+
+Too often as software developers we take features as given - EE are there to give the customers whatever they want. The thing we neglect to realize is that feature choice impacts the longevity and maintainability of systems. In this keynote, Michael Feathers will explore this idea and describe now we can move toward a model where business weighs these impacts in the context of systems development.
+
+Michael Feathers is the Founder and Director of R7K Research & Conveyance, a company specializing in software and organization design. Prior to forming R7K, Michael was the Chief Scientist of Obtiva and a consultant with Object Mentor International. Over the past 20 years he has consulted with hundreds of organizations, supporting them with general software design issues, process change and code revitalization. A frequent presenter at national and international conferences, Michael is also the author of the book Working Effectively with Legacy Code (Prentice Hall, 2004).
+
+**Russel Winder**
+
+Friday (26th) Closing Keynote
+
+UK school curriculum underwent a revolution as of 2014-09: ITC was replaced with programming. Whilst the change itself was campaigned for, and widely wanted, the way government handled the change left a lot to be desired. Some, but not all, universities and colleges have joined in realizing the change and preparing for the consequent revolution in university computer science curriculum, c.2018 onwards. Are businesses ready for the knock-on change?
+
+This presentation will delve into some of the most important and/or obvious issues surrounding this world leading experiment in child education.
+
+Russel is an ex-theoretical physicist, an ex-UNIX system programmer and an ex-academic. He is now an independent consultant, analyst, author, expert witness and trainer also doing startups. He is interested in all things parallel, concurrent and build.
+
+Russel is actively involved with Groovy, GPars, GroovyFX, SCons, and Gant. Also Gradle, Ceylon, Kotlin, D and bit of Rust. And lots of Python, especially Python-CSP.
+
+
+**Richard Astbury**
+
+Saturday (27th) Opening Keynote
+
+Richard demonstrates three new programming languages and discusses how they will affect the future direction of computer programming.
+
+Richard Astbury builds software systems to support satellite-connected devices around the globe. He is a Microsoft MVP for Microsoft Azure, and consultant at two10degrees. Richard is often found developing open source software in C# and Node.js, and lives in Suffolk with his wife and three children.
+
+***
+
+_Ticket’s are on sale at: [http://www.nordevcon.com/](http://www.nordevcon.com/#tickets)_
+
+_Dont forget that we will be having a pre-conference session as usual on thursday the 25th of February followed by the pre-conference dinner but the venue for the dinner is TBC._
+
+_On the Friday there will be a wine Reception which is free to attend but places are limited and this will be followed by a conference speaker dinner which will be 3 courses and a few glasses of wine for £36.53._

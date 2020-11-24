@@ -1,7 +1,7 @@
 title: Posts
 template: posts/show
 layout: layout
-mount: 0fceca91-b7ee-412c-badd-2386b40edf29
+mount: c698bc05-023e-441d-8d6f-5ecf7605d515
 taxonomies:
   - tags
 revisions: false

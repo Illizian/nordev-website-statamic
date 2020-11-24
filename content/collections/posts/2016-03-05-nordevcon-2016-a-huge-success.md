@@ -1,0 +1,19 @@
+---
+title: 'nor(DEV):con 2016 a HUGE success!'
+updated_at: 1457188466
+author:
+  - 86b937b1-47dc-4265-8287-67c8cc53b1ff
+tags:
+  - NorDevCon
+  - Retrospective
+id: 14ae19ec-b7a1-449a-b3fd-182b150e98da
+---
+nor(DEV):con attracted over 400 people this year, the biggest turnout yet! There were international speakers, fully booked workshops and a great atmosphere over the whole weekend.
+
+This year's new business track proved popular, especially Ermine Amies' 'Time Bandits' session, with delegates taking away practical tips and advice on how to better use their time, and Jon Bradford's 'Silicon Broad: Bridges not Valleys' about the future of tech startups.
+
+The [EDP covered the conference](http://www.edp24.co.uk/business/hundreds_of_tech_leaders_gather_for_norfolk_developers_annual_summit_1_4434428), which will be held from Thursday 23rd to Saturday 25th February next year, and already has a number of big names lined up!
+
+Keep an eye on the nor(DEV):con website, or follow them on Facebook and twitter to be kept up to date.
+
+Lastly, a massive thank you to everyone who supported and attended the conference, it was a HUGE success because of you!
