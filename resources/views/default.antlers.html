@@ -1,13 +1,11 @@
-{{ partial:site.heading }}
+{{ if display_title }}
+    {{ partial:title :title="title" prepend_class="lg:max-w-3xl" prepend_slash="true" }}
+{{ /if }}
 
-{{ partial:bard.index }}
+{{ partial:bard/index }}
 
 {{ if mount }}
-    <ol>
-        {{ collection :from="mount" }}
-            <li>
-                {{ partial src="{mount}/preview" }}
-            </li>
-        {{ /collection }}
-    </ol>
+    {{ collection :from="mount" paginate="true" :limit="config.entries_per_page" as="posts" }}
+        {{ partial:listing :source="mount" }}
+    {{ /collection }}
 {{ /if }}

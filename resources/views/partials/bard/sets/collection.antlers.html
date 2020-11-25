@@ -1,0 +1,13 @@
+<section>
+    {{ partial:headline :headline="headline" :link="link" }}
+
+    {{ collection :from="from" :limit="items_to_show" paginate="false" as="entries" }}
+        <ol>
+            {{ entries scope="entry" }}
+                <li>
+                    {{ partial src="{ from }/preview" }}
+                </li>
+            {{ /entries }}
+        <ol>
+    {{ /collection }}
+</section>

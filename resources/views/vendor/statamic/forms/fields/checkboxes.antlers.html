@@ -1,0 +1,15 @@
+{{ foreach:options as="value|label" }}
+    <label class="{{ if inline }}inline-block{{ else }}block{{ /if }} mr-4 text-gray-500 font-bold">
+        <input
+            class="mr-2 leading-tight"
+            type="checkbox"
+            name="{{ handle }}"
+            value="{{ value }}"
+            {{ if (old | in_array:value) }}checked{{ /if }}
+        >
+        <span class="text-sm">
+            {{ label }}
+        </span>
+    </label>
+{{ /foreach:options }}
+

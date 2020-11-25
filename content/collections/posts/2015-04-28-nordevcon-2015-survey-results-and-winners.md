@@ -1,0 +1,35 @@
+---
+title: 'Nor(DEV)con: 2015 Survey Results and Winners!'
+updated_at: 1430216547
+author:
+  - b030d05c-5254-4c31-a790-d72064786ec7
+tags:
+  - NorDevCon
+  - Retrospective
+id: 9cfcb010-d879-4c95-9d8b-7567b009675f
+---
+As nor(DEV):con continues to grow and attract higher numbers of attendees, we began to consider running the conference over two days. To find out if this was something the tech community would be interested in, we conducted a survey of nor(DEV):con 2015 visitors.
+
+We were very pleased to see that two thirds of the 93 respondents would like to see nor(DEV):con happen over two days.
+
+The majority of those surveyed would prefer Thursday and Friday to any other combination of days, with Friday and Saturday morning coming in second, head and shoulders above the other options.
+
+Based on this feedback and the direction we would like to take the conference, we have decided to run a number of parallel, hands-on workshops on the Thursday and the regular conference on Friday, with a keynote followed by five streams on the Saturday morning.
+
+We are very pleased to announce that[Michael Feathers](https://twitter.com/mfeathers) is joining us from the US to give the opening keynote on Friday, as well as running a workshop.
+
+[Russel Winder](https://twitter.com/russel_winder), who spoke at the inaugural Nor(DEV):con, will be giving the closing keynote for 2016 and the conference will finish lunchtime on Saturday.
+
+On Saturday[Richard Astbury](https://twitter.com/richorama) will present the day’s keynote, which will be followed by five tracks, four of which will be lecture style presentations of 45 or 90 minutes. The fifth track will run at the same time and will comprise a 90 minute hands-on workshop.
+
+Workshop tickets will be sold separately and individually for each workshop. We will offer tickets for Friday and Saturday morning as well as day tickets for those who only want to attend Friday or Saturday. The pre-conference special, the pre-conference dinner and the conference dinner will all be the same as before.
+
+Those who completed our survey also went into a draw to win tickets to nor(DEV):con 2016 and our five winners are:
+
+- Luke Kittridge
+- Paul Cutting
+- Matthew Dunn
+- Tracey Tutt
+- Roberto Bezzi
+
+We look forward to seeing everyone next year!

@@ -1,0 +1,11 @@
+<div class="pl-2 py-2 border-l-4 border-red-500">
+    <p>
+        {{ content | nl2br }}
+    </p>
+
+    {{ if attribution }}
+        <p class="mt-2 font-bold">
+            {{ attribution }}
+        </p>
+    {{ /if }}
+</div>

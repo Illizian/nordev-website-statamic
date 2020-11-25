@@ -1,12 +1,13 @@
 title: Jobs
 template: jobs/show
 layout: layout
-mount: 7d80c348-b427-452a-96c2-93c4590135f4
 taxonomies:
-  - locations
   - roles
+  - locations
 revisions: false
+mount: 51b920be-fea6-4cf8-836b-1b2892628c9e
 route: '{mount}/{slug}'
+date: true
 sort_dir: asc
 date_behavior:
   past: public

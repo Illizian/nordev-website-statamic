@@ -1,0 +1,14 @@
+{{ foreach:options as="value|label" }}
+    <label class="{{ if inline }}inline-block{{ else }}block{{ /if }} mr-4 text-gray-500 font-bold">
+        <input
+            class="mr-2 leading-tight"
+            type="radio"
+            name="{{ handle }}"
+            value="{{ value }}"
+            {{ old === value ?= "checked" }}
+        >
+        <span class="text-sm">
+            {{ label }}
+        </span>
+    </label>
+{{ /foreach:options }}

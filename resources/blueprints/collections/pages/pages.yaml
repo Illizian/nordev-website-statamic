@@ -10,8 +10,31 @@ sections:
           required: true
           validate:
             - required
+          width: 75
+      -
+        handle: display_title
+        field:
+          display: 'Display Title'
+          type: toggle
+          width: 25
+          listable: hidden
+          default: true
       -
         import: bard
+      -
+        handle: author
+        field:
+          type: users
+          display: Author
+          default: current
+          localizable: true
+          max_items: 1
+      -
+        handle: template
+        field:
+          type: template
+          display: Template
+          localizable: true
   sidebar:
     display: Sidebar
     fields:

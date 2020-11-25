@@ -1,0 +1,49 @@
+<section>
+    {{ if headline }}
+        {{ partial:headline :headline="headline" }}
+    {{ /if }}
+
+    {{ if instructions }}
+        <div class="mb-4">
+            <p class="text-gray-500 text-sm">{{ instructions | nl2br }}</p>
+        </div>
+    {{ /if }}
+
+    {{ form:create in="{ source | raw }" class="w-full max-w-lg" }}
+        {{ if success }}
+            {{ partial:alert :message="success" color="green" }}
+        {{ elseif errors }}
+            {{ partial:alert headline="There was an error submitting your form" :errors="errors" }}
+        {{ /if }}
+
+        <div class="flex flex-wrap -mx-4 mb-6">
+            {{ fields }}
+                <div class="w-full mb-6 px-4 py-3 md:mb-0 md:{{ width | tailwind_width }}">
+                    <label class="block mb-2 uppercase tracking-wide text-xs font-bold text-{{ error ? 'red' : 'gray' }}-500">
+                        {{ display }}
+                        {{ if required }}
+                            <span class="font-bolder text-{{ error ? 'red' : 'gray' }}-600">
+                                *
+                            </span>
+                        {{ /if }}
+                    </label>
+
+                    <div class="mb-3">
+                        {{ field }}
+                    </div>
+
+                    {{ if error }}
+                        <p class="text-red-500 text-xs italic">{{ error }}</p>
+                    {{ /if }}
+                </div>
+            {{ /fields }}
+        </div>
+
+        <button
+            type="submit"
+            class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
+        >
+          Submit
+        </button>
+    {{ /form:create }}
+</section>

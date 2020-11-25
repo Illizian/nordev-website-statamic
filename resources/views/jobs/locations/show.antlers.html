@@ -1,9 +1,7 @@
-{{ title }}
+<header class="mb-4">
+    {{ partial:title title="jobs/locations/{ title | slugify }" prepend_slash="true" }}
+</header>
 
-<ol>
-    {{ entries }}
-        <li>
-            {{ partial:jobs.preview }}
-        </li>
-    {{ /entries }}
-</ol>
+{{ entries :limit="config.pagination_limit" paginate="true" as="posts" }}
+    {{ partial:listing source="jobs" }}
+{{ /entries }}

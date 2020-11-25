@@ -1,0 +1,8 @@
+{{ if authors }}
+    <p class="block text-base text-gray-600">
+        by
+        {{ authors }}
+            <a class="underline" href="{{ url }}">{{ title }}</a>{{ unless last }},{{ /unless }}
+        {{ /authors }}
+    </p>
+{{ /if }}

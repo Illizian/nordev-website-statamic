@@ -1,0 +1,32 @@
+---
+title: 'Tickets On Sale Now!'
+updated_at: 1434635959
+author:
+  - b030d05c-5254-4c31-a790-d72064786ec7
+tags:
+  - NorDevCon
+id: e21d966e-1499-446e-b8b3-cc61edd0f899
+---
+Tickets for the 2016 [nor(DEV):con](http://www.nordevcon.com/) are now on sale, so if you want to get ahead of the game and grab a Super Early Bird ticket now's your chance!
+
+Growing in popularity and still attracting visitors from across the country, as well as the world, nor(DEV):con has expanded to run over two and a half days. Thursday will see a full day of workshops, while Friday and Saturday will hold the conference talks, and we've already secured some big names.
+
+There are limited numbers of the Super Early Birds, which are available at a very reduced rate, but once they're gone, they're gone! Tickets start from £20 and [are available here](http://www.eventbrite.co.uk/e/nordevcon-2016-tickets-15843460216) and there are 500 tickets available in total for conference spaces.
+
+Ticket types and availability -
+
+- Super Early Bird for Friday & Saturday. Price £55. **50 available**
+- Super Early Bird for Friday only. Price £45. **15 a****vailable**
+- Super Early Bird for Saturday only. Price £20. **15 a****vailable**
+
+- Early Bird for Friday & Saturday. Price £95
+- Early Bird for Friday only. Price £80
+- Early Bird for Saturday only. Price £35
+
+- Standard for Friday & Saturday. Price £250
+- Standard for Friday only. Price £210
+- Standard for Saturday only. Price £95
+
+As previously, Super Early Bird and Early Bird tickets will only be available until two weeks before the conference. After this date only the standard tickets will be available to purchase. This is to encourage everyone to get their tickets in plenty of time so we can focus on the conference nitty gritty!
+
+If you would like to support us and the tech community by offering sponsorship, please see our [available packages here.](http://www.nordevcon.com/sponsorship/) We have something suitable for every budget.

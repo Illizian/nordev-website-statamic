@@ -1,18 +1,29 @@
-<!doctype html>
 <html lang="{{ site:short_locale }}">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ title ?? site:name }}</title>
+
+        {{ if homepage == current_uri }}
+            <title>{{ config:site_name }} | {{ config:substrap }}</title>
+        {{ else }}
+            <title>{{ title }} | {{ config:site_name }}</title>
+        {{ /if }}
         <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
         <script src="{{ mix src='/js/site.js' }}"></script>
     </head>
+
     <body class="bg-gray-900 text-gray-200 px-8">
         <div class="flex flex-col h-screen mx-auto w-full md:w-4/5 lg:max-w-3xl">
             {{ partial:site/header }}
 
-            {{ template_content }}
+            <main class="flex-grow">
+                {{ template_content }}
+            </main>
+
+            <footer class="my-6 py-4 text-base text-gray-500 text-center">
+                <p>© Norfolk Developers Ltd.</p>
+            </footer>
         </div>
     </body>
 </html>

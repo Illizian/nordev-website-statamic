@@ -1,0 +1,13 @@
+{{ if no_results }}
+    {{ partial:no_results :entity="source" }}
+{{ /if }}
+
+<ol class="mt-12">
+    {{ posts scope="entry" }}
+        <li>
+            {{ partial src="{source}/preview" }}
+        </li>
+    {{ /posts }}
+</ol>
+
+{{ partial:pagination :per_page="config.entries_per_page" }}
