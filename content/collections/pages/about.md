@@ -46,11 +46,6 @@ bard:
         type: text
         text: 'All of our events are posted to our Meetup Group, join the group to receive regular updates as events are planned.'
   -
-    type: set
-    attrs:
-      values:
-        type: meetup
-  -
     type: heading
     attrs:
       level: 3
