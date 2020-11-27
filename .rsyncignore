@@ -1,3 +1,5 @@
 .github
+.env
 .env.example
 .rsyncignore
+bootstrap
