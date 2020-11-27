@@ -59,7 +59,7 @@ jobs:
         PORT: 22
         ARGS: -avz --update --chown=www-data:www-data --exclude-from='.rsyncignore'
         SSH_ARGS: '-p 22 -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=quiet'
-        SOURCE: ./
+        SOURCE: ./content/
         PRE_SCRIPT: ""
         POST_SCRIPT: ""
 
@@ -77,6 +77,6 @@ jobs:
         PORT: 22
         ARGS: -avz --ignore-existing --chown=www-data:www-data --exclude-from='.rsyncignore'
         SSH_ARGS: '-p 22 -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=quiet'
-        SOURCE: ./
+        SOURCE: ./content/
         PRE_SCRIPT: ""
         POST_SCRIPT: ""
