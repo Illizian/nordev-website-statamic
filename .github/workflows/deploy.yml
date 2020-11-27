@@ -1,0 +1,46 @@
+name: Deploy Main to Digital Ocean
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Validate composer.json and composer.lock
+      run: composer validate
+
+    - name: Cache Composer packages
+      id: composer-cache
+      uses: actions/cache@v2
+      with:
+        path: vendor
+        key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-php-
+
+    - name: Install dependencies
+      if: steps.composer-cache.outputs.cache-hit != 'true'
+      run: composer install --prefer-dist --no-progress --no-suggest
+
+    - name: Deploy to Digital Ocean
+      uses: up9cloud/action-rsync@v1.1
+      env:
+        # Required
+        HOST: ${{secrets.DEPLOY_PROD_HOST}}
+        KEY: ${{secrets.DEPLOY_PROD_SSH_KEY}}
+        TARGET: /var/www/html/
+
+        # Optional (with `default` values)
+        VERBOSE: false # set it true if you want some tips
+        USER: root
+        PORT: 22
+        ARGS: -avz --delete --exclude-from='.rsync-ignore'
+        SSH_ARGS: '-p 22 -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=quiet'
+        SOURCE: ./
+        PRE_SCRIPT: ""
+        POST_SCRIPT: ""
