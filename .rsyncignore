@@ -3,3 +3,4 @@
 .env.example
 .rsyncignore
 bootstrap
+public/vendor
