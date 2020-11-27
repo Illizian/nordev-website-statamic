@@ -45,7 +45,7 @@ jobs:
         PRE_SCRIPT: ""
         POST_SCRIPT: ""
 
-    - name: Deploy [Content] to Digital Ocean
+    - name: Deploy [Updated Content] to Digital Ocean
       uses: up9cloud/action-rsync@v1.1
       env:
         # Required
@@ -58,6 +58,24 @@ jobs:
         USER: root
         PORT: 22
         ARGS: -avz --update --chown=www-data:www-data --exclude-from='.rsyncignore'
+        SSH_ARGS: '-p 22 -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=quiet'
+        SOURCE: ./content
+        PRE_SCRIPT: ""
+        POST_SCRIPT: ""
+
+    - name: Deploy [New Content] to Digital Ocean
+      uses: up9cloud/action-rsync@v1.1
+      env:
+        # Required
+        HOST: ${{secrets.DEPLOY_PROD_HOST}}
+        KEY: ${{secrets.DEPLOY_PROD_SSH_KEY}}
+        TARGET: /var/www/html/content
+
+        # Optional (with `default` values)
+        VERBOSE: false # set it true if you want some tips
+        USER: root
+        PORT: 22
+        ARGS: -avz --ignore-existing --chown=www-data:www-data --exclude-from='.rsyncignore'
         SSH_ARGS: '-p 22 -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=quiet'
         SOURCE: ./content
         PRE_SCRIPT: ""
