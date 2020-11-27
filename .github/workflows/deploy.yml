@@ -79,4 +79,4 @@ jobs:
         SSH_ARGS: '-p 22 -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=quiet'
         SOURCE: ./content/
         PRE_SCRIPT: ""
-        POST_SCRIPT: ""
+        POST_SCRIPT: "cd /var/www/html/ && git remote set-url origin git@github.com:Illizian/nordev-website-statamic.git"
