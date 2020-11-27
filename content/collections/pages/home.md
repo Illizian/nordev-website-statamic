@@ -1,5 +1,9 @@
 ---
 title: Home
+display_title: true
+author: 9c61e4ae-acd7-424b-b44c-ddf470aee228
+updated_by: 9c61e4ae-acd7-424b-b44c-ddf470aee228
+updated_at: 1606308952
 bard:
   -
     type: set
@@ -12,7 +16,6 @@ bard:
               Going straight to the <span class="text-red-500">♥️</span> of
               software development practice and process
             </h1>
-          
             <h2 class="text-xl sm:text-2xl md:text-3xl mt-3 text-gray-500 tracking-normal leading-tight">
               Local, national and international speakers and workshops for Norfolk
               Developers.
@@ -22,6 +25,11 @@ bard:
             </p>
           </header>
           
+  -
+    type: set
+    attrs:
+      values:
+        type: meetup
   -
     type: set
     attrs:
@@ -40,16 +48,5 @@ bard:
         from: magazines
         items_to_show: 1
         link: 'entry::f94578f4-14d8-495b-80ae-48410106cb7e'
-  -
-    type: set
-    attrs:
-      values:
-        type: quote
-        content: '2020 the year of learning!'
-        attribution: Kintronix
-author: 2dc6e6d1-dce3-4670-9db2-9eda6a69c108
-updated_by: 2dc6e6d1-dce3-4670-9db2-9eda6a69c108
-updated_at: 1602411064
-display_title: false
 id: home
 ---

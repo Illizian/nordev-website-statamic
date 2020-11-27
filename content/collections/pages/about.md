@@ -2,8 +2,8 @@
 title: about
 display_title: true
 author: 2dc6e6d1-dce3-4670-9db2-9eda6a69c108
-updated_by: 2dc6e6d1-dce3-4670-9db2-9eda6a69c108
-updated_at: 1602669402
+updated_by: 9c61e4ae-acd7-424b-b44c-ddf470aee228
+updated_at: 1606312639
 bard:
   -
     type: heading
@@ -197,5 +197,15 @@ bard:
         instructions: 'We love hearing from the community. Please send us your feedback, good or bad. You can do so anonymously, or if you would like us to follow up - enter an email address and we will!'
         source: feedback
         headline: 'nor(DEV): Comment Box'
+  -
+    type: set
+    attrs:
+      values:
+        type: form
+        headline: 'Example Form'
+        instructions: 'This is just an example form'
+        source: example
+  -
+    type: paragraph
 id: 284cd0e0-cb77-4645-9403-a52f822ed2ac
 ---

@@ -133,3 +133,6 @@ fields:
                 listable: hidden
                 validate:
                   - required
+        meetup:
+          display: Meetup
+          fields: {  }

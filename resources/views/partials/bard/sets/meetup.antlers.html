@@ -1,0 +1,35 @@
+<section>
+    {{
+        partial:headline
+        headline="Upcoming Events"
+        link="https://www.meetup.com/Norfolk-Developers-NorDev/events/"
+        from="events"
+    }}
+
+    <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {{ meetup }}
+            <li class="block bg-gray-800 rounded leading-tight tracking-tight">
+                <a href="{{ link }}" class="p-4 block hover:outline">
+                    <h3 class="font-bold text-lg">
+                        <span role="img" aria-label="calendar">📆</span>&nbsp;
+                        {{ name }}
+                    </h3>
+                    <p class="mt-2 text-gray-500 font-bold">
+                        {{ start | relative }}
+                    </p>
+                    <p class="mt-1 text-gray-500">
+                        {{ start format="G:i" }} to {{ end format="G:i" }}
+                    </p>
+                    <p class="mt-1 text-red-700 font-bold">RSVP &raquo;</p>
+                    <p class="mt-1 text-gray-600 text-sm">
+                        {{ yes_rsvp_count }}
+                        {{ if rsvp_limit }}
+                            / {{ rsvp_limit }}
+                        {{ /if }}
+                        attending
+                    </p>
+                </a>
+            </li>
+        {{ /meetup }}
+    </ul>
+</section>
